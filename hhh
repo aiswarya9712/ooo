@@ -1,0 +1,16 @@
+int main() {
+ char string[256];
+ int len;
+ 
+ printf("Enter a string:\n");
+ fgets(string, 256-1, stdin);
+ len = (strlen(string) - 1);
+ printf("You entered %s \nlength %d:\n", string, len);
+ 
+ printf("Reverse string:");
+ for(; len >= 0; len--)
+        printf("%c",string[len]);
+ 
+ print("\n");
+ exit(0);
+}
